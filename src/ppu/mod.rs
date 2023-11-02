@@ -1,4 +1,5 @@
-use crate::cpu::Cpu;
+// use crate::cpu::Cpu;
+pub use crate::cpu::Cpu;
 use crate::ppu::colors::{Color, NES_COLOR_PALLETE};
 use crate::ppu::registers::{
     AddrRegister, ControllerRegister, MaskRegister, OamAddrRegister, ScrollRegister, StatusRegister,
