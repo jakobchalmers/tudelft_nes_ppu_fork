@@ -128,6 +128,7 @@ pub fn run_cpu_headless<CPU>(cpu: &mut CPU, mirroring: Mirroring) -> Result<(), 
 where
     CPU: Cpu + 'static,
 {
+    log::info!("running cpu headless");
     let (_, mut writer) = Screen::dummy();
 
     run_ppu(mirroring, cpu, &mut writer, None)
